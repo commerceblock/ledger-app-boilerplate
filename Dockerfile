@@ -50,15 +50,17 @@ RUN cd /ledger-app-btc
 
 WORKDIR /
 RUN cd /
-RUN https://github.com/commerceblock/ledger-app-ocean.git
-RUN git checkout develop
+RUN git clone https://github.com/commerceblock/ledger-app-ocean.git
 WORKDIR /ledger-app-ocean
+RUN git checkout develop
+
 
 COPY apploader /apploader
 
-RUN cd /apploader
+WORKDIR /apploader
+
 RUN ./build_dgld.sh
 
-
+VOLUME /apploader
 
 
