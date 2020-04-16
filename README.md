@@ -3,9 +3,14 @@ This is a build system for the DGLD Nano S app, based on the Ledger boilerplate 
 
 To build the app and load it onto the ledger:
 
+```
 ./build.sh
-./load_dgld.sh
+```
+Wait for the docker image to build, then
 
+```
+./load_dgld.sh
+```
 
 # Ledger boilerplate app
 
