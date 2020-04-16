@@ -1,3 +1,12 @@
+# Ledger DGLD app
+This is a build system for the DGLD Nano S app, based on the Ledger boilerplate app (see below).
+
+To build the app and load it onto the ledger:
+
+./build.sh
+./load_dgld.sh
+
+
 # Ledger boilerplate app
 
 ## Overview
