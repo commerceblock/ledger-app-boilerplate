@@ -52,7 +52,6 @@ WORKDIR /
 RUN cd /
 RUN git clone https://github.com/commerceblock/ledger-app-ocean.git
 WORKDIR /ledger-app-ocean
-RUN git checkout develop
 
 
 COPY apploader /apploader

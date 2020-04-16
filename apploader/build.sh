@@ -9,7 +9,8 @@ make clean
 make
 make loadcmd > $p/$DIR/load.sh
 chmod u+x $p/$DIR/load.sh
-sed -i "s@--path@--path \"44\'\" --path \"44\'/1\'/0\'\" --path \"4541509\'\"@g" $p/$DIR/load.sh
+#sed -i "s@--path@--path \"44\'\" --path \"44\'/1\'/0\'\" --path \"4541509\'\"@g" $p/$DIR/load.sh
+sed -i "s@--path@@g" $p/$DIR/load.sh
 cp -r bin $p/$DIR
 cp -r debug $p/$DIR
 cd $p
